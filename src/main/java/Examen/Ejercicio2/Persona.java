@@ -4,9 +4,10 @@ public abstract class Persona {
     String nombre;
     protected ICanalDeComunicacion canalDeComunicacion;
 
-    public Persona(ICanalDeComunicacion canalDeComunicacion) {
-        this.canalDeComunicacion = canalDeComunicacion;
+    public Persona(ICanalDeComunicacion canalDeComunicacion){
+        this.canalDeComunicacion =canalDeComunicacion;
     }
-    public abstract void send(String message);
-    public abstract void messageReceived(String message);
+
+    protected abstract void send(Mensaje mensaje);
+    protected abstract void messageReceived(String message);
 }

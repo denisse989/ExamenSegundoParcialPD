@@ -12,7 +12,11 @@ public class Chat implements ICanalDeComunicacion{
         for (Persona p:personas){
             if (p!=persona){
                 if (p instanceof Estudiante && message.paraEstudiante()){
-
+                    p.messageReceived(message.getContenido());
+                }if(p instanceof Docente && message.paraDocente()){
+                    p.messageReceived(message.getContenido());
+                }if(p instanceof Administrativo && message.paraAdministrativo()){
+                    p.messageReceived(message.getContenido());
                 }
             }
         }
