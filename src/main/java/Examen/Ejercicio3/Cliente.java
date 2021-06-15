@@ -2,7 +2,7 @@ package Examen.Ejercicio3;
 
 public class Cliente {
     public static void main(String[] args) {
-        PaginaFacebook paginaFacebook = new PaginaFacebook("Loot Box");
+        PaginaFacebook paginaFacebook = new PaginaFacebook("Memes");
 
         paginaFacebook.attach(new Usuario(true, "Juan1"));
         paginaFacebook.attach(new Usuario(false, "Juan2"));
